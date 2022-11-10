@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/update">
+        
+        <div class="mb-3">
+            <label for="sid" class="form-label">ID</label>
+            <input type="number" class="form-control" id="sid" name="ID" value="{{data[0]}}"" readonly">
+
+        </div>
+        
+        <div>
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" name="Name" value="{{data[1]}}">
+
+        </div>
+        
+        <div>
+            <label for="location" class="form-label">Location</label>
+            <input type="text" class="form-control" id="location" name="Location" value="{{data[2]}}">
+        </div>
+        <div>
+            <label for="companyname" class="form-label">CompanyName</label>
+            <input type="text" class="form-control" id="companyname" name="CompanyName" value="{{data[3]}}">
+        </div>
+        <div>
+            <label for="post" class="form-label">Post</label>
+            <input type="text" class="form-control" id="post" name="Post" value="{{data[4]}}">
+        </div>
+        <div>
+            <button type="submit">Update</button>
+        </div>
+
+    </form>
+</body>
+</html>
